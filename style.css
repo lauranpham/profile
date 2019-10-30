@@ -24,13 +24,12 @@ h1 {
   color: #022B3A;
   font-size: 300%;
   margin: 10px, 0px;
-
 }
 
 h2 {
   /*background-color: #69A2B0;*/
   color: #022B3A;
-  padding: 5px 5px;
+  padding: 10px 5px 5px 5px;
 }
 
 a {

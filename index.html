@@ -9,9 +9,9 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     </head>
     <body>
-      <div class="profile-container">
-        <img src= "images/profile_photo.JPG" alt="me">
-        <h1>Laura Pham</h1>
+      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1678&q=80)">
+        <div><img src= "images/profile_photo.JPG" alt="me"></div>
+        <h1 id="heading-big">Laura Pham</h1>
         <ul class="list-inline">
           <li>
             <a href="https://github.com/lauranpham" target="_blank"
@@ -30,50 +30,55 @@
           </li>
         </ul>
         <p>Science & Math teacher turned Software Developer! Le Wagon London batch #319!</p>
+        <div class=nav-links>
+          <a href="#about-container">About</a>
+          <a href="#projects-container">Projects</a>
+        </div>
       </div>
 
-      <div class="profile-container">
-        <h2>Recent Projects 🤓</h2>
-        <div class="projects-container">
+      <div id="about-container">
+        <div id="section">
+          <div class="about-card">
+            <h2>Full Stack Developer 💻</h2>
+            <p>A Full Stack Developer in training. I enjoy the constant learning process, problem solving,
+              creativity and opportunities to work with passionate, likeminded people.</p>
+          </div>
+
+          <div class="about-card">
+            <h2>Teacher 📚</h2>
+            <p>I worked as a Science and Math teacher for three years. I hope to still make
+            an impact in education through my role as a developer.</p>
+          </div>
+
+          <div class="about-card">
+            <h2>Traveller 🌏</h2>
+            <p>Like every Australian, I am an avid world traveller. 20 countries and counting!
+            I moved to London 10 months ago!</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="projects-container">
+        <div id="section">
+          <h2>Recent Projects 🤓</h2>
           <div class="project-box">
-            <h2> Sammi 🏫 </h2>
+            <h2 class="project-heading"> Sammi 🏫 </h2>
             <p class="project-description">Sammi is a supportive app for teachers to support the emotional and social development of their students.</p>
             <a href = "http://www.sammi.live/" target="_blank" id= "btn-blue">Sammi</a>
           </div>
 
           <div class="project-box">
-            <h2> Furreal 🐶 </h2>
+            <h2 class="project-heading"> Furreal 🐶 </h2>
             <p class="project-description">Furreal is an online marketplace to hire your next pet best friend!</p>
             <a href = "https://furreal.herokuapp.com/" target="_blank" id= "btn-blue">Furreal</a>
           </div>
 
           <div class="project-box">
-            <h2> Mister Cocktail 🍸 </h2>
+            <h2 class="project-heading"> Mister Cocktail 🍸 </h2>
             <p class="project-description">Mister Cocktail is a website for an up and coming bar venue with its drinks menu and prices </p>
             <a href = "https://mister-cocktail-2311.herokuapp.com/" target="_blank" id= "btn-blue">Mister Cocktail</a>
           </div>
         </div>
       </div>
-
-      <div class="profile-container">
-        <h2>Full Stack Developer 💻</h2>
-        <p>A Full Stack Developer in training. I enjoy the constant learning process, problem solving,
-          creativity and opportunities to work with passionate, likeminded people. I am looking
-          forward to applying my new skills to meaningful and creative projects.</p>
-        <a href = "https://www.lewagon.com/" target="_blank" id= "btn-blue">Le Wagon</a>
-      </div>
-
-      <div class="profile-container">
-        <h2>Teacher 📚</h2>
-        <p>I worked as a Science and Math teacher for three years. I hope to still make
-        an impact in education through my role as a developer.</p>
-      </div>
-
-      <div class="profile-container">
-        <h2>Traveller 🌏</h2>
-        <p>Like every Australian, I am an avid world traveller. 20 countries and counting!
-        I moved to London 10 months ago!</p>
-      </div>
-
     </body>
   </html>

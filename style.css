@@ -1,35 +1,76 @@
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display|Roboto:300|Staatliches&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #757575;
   font-family: 'Roboto', sans-serif;
-  background-color: #BCD4DE;
   text-align: center;
   font-size: 20px;
+  margin: 0px;
 }
 
+.banner {
+  background-size: cover;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/** {
+  padding: 0;
+  margin: 0;
+}*/
+.container {
+  margin: 0 auto;
+  width: 60vw;
+}
 .profile-container {
-  background-color: #FEFCFD;
-  margin: 2% 20%;
+  background-color: rgba(250, 250, 250, 0.9);
+  margin: 5% 0;
   padding: 0.1px 30px 40px 30px;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.2);
+  box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.1);
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2 {
   font-family: 'Staatliches', cursive;
 }
 
-h1 {
-  color: #022B3A;
+#heading-big {
+  color: #ADC4CC ;
+  text-shadow: 5px 5px 10px rgba(10, 10, 10, 0.1);
   font-size: 300%;
-  margin: 5px 0px 5px 0px;
 }
 
 h2 {
   /*background-color: #69A2B0;*/
   color: #022B3A;
-  padding: 10px 5px 5px 5px;
+  margin: 30px 0px;
 }
 
 a {
@@ -37,19 +78,37 @@ a {
   color: white;
 }
 
+p {
+  padding-bottom: 10px;
+}
+
+.nav-links {
+  display:flex;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.nav-links a:hover {
+  font-size: 110%;
+  text-decoration: underline
+}
+
 #btn-blue {
-  background-color: #69A2B0;
+  background-color: #41819D;
   padding: 10px 20px;
+  margin: 20px 0px;
   border-radius: 5px;
 }
 
 #btn-blue:hover {
-  background-color: #90C3C8;
+  background-color: #789FB0;
 }
 
 .list-inline {
   list-style: none;
   padding: 0;
+  height: 30px;
 }
 
 .list-inline > li {
@@ -59,17 +118,51 @@ a {
 }
 
 .logo-blue {
-  color: #69A2B0;
+  color: #97C7DC;
+}
+
+#about-container {
+  background-image: url("https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1962&q=80");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#projects-container {
+  background-image: url("https://images.unsplash.com/photo-1468276311594-df7cb65d8df6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  background-size: cover;
+  display: flex;
+  height: 130vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(250, 250, 250, 0.6);
+  margin: 0 auto;
+  width: 60vw;
+  padding: 10px 30px 10px 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.1);
+/*  box-sizing: border-box;*/
+}
+
+.about-card {
 }
 
 .logo-blue:hover {
+  color: #789FB0;
   text-decoration: underline;
 }
 
 img {
-  width: 200px;
+  width: 250px;
   max-width: 100%;
-  height: 200px;
+  height: 250px;
   border-radius: 50%;
   box-shadow: 0px 5px 10px rgba(10, 10, 10, 0.5);
   object-fit: cover;
@@ -77,37 +170,33 @@ img {
   object-position: top;
 }
 
-.projects-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
 .project-box {
-  margin: 0px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.project-description {
-  height: 130px;
+.project-heading {
+  margin: 10px 0px;
 }
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
-    width: 700px;
+    width: 70vw;
   }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
   .container {
-    width: 500px;
+    width: 70vw;
   }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
-    width: 300px;
+    width: 70vw;
   }
-  .projects-container {
+  .container {
     grid-template-columns: 1fr;
   }
 }

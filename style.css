@@ -62,7 +62,9 @@ h1, h2 {
 }
 
 #heading-big {
-  color: #ADC4CC ;
+  color: white ;
+  /*color: #D391A2;*/
+  letter-spacing: 0.3em;
   text-shadow: 5px 5px 10px rgba(10, 10, 10, 0.1);
   font-size: 300%;
 }
@@ -86,16 +88,20 @@ p {
   display:flex;
   width: 40%;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
+.nav-links a {
+  color: #D391A2;
+  font-weight: bold;
+  padding-top: 10px;
+}
 .nav-links a:hover {
-  font-size: 110%;
-  text-decoration: underline
+  font-weight: lighter;
 }
 
 #btn-blue {
-  background-color: #41819D;
+  background-color: #5D9CB0;
   padding: 10px 20px;
   margin: 20px 0px;
   border-radius: 5px;
@@ -142,7 +148,7 @@ p {
 #section {
   display: flex;
   flex-direction: column;
-  background-color: rgba(250, 250, 250, 0.6);
+  background-color: rgba(250, 250, 250, 0.9);
   margin: 0 auto;
   width: 60vw;
   padding: 10px 30px 10px 30px;
@@ -160,9 +166,9 @@ p {
 }
 
 img {
-  width: 250px;
+  width: 200px;
   max-width: 100%;
-  height: 250px;
+  height: 200px;
   border-radius: 50%;
   box-shadow: 0px 5px 10px rgba(10, 10, 10, 0.5);
   object-fit: cover;

@@ -91,7 +91,7 @@ p {
   font-size: 1.2em;
   color: #D391A2;
   padding-top: 10px;
-  font-weight: lighter;
+  font-weight: bolder;
   transition: 0.3s ease;
   display:inline-block;
 }
@@ -306,13 +306,10 @@ p {
 
 @media (max-width: 250px) {
   /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 70vw;
+  body {
+    height: 100vh;
+    background-size: cover;
   }
-  .container {
-    grid-template-columns: 1fr;
-  }
-
   body, #banner p, .logo-blue  {
     font-size: 0.8em;
   }

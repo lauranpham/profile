@@ -228,13 +228,22 @@ img {
 
 
 }
-@media (max-width: 540px) {
+@media (max-width: 500px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 70vw;
   }
   .container {
     grid-template-columns: 1fr;
+  }
+
+  body, .banner p, .logo-blue  {
+    font-size: 0.9em;
+  }
+
+  img {
+    max-width: 130px;
+    max-height: 130px;
   }
 }
 

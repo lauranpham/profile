@@ -38,14 +38,6 @@ body {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-/** {
-  padding: 0;
-  margin: 0;
-}*/
-.container {
-  margin: 0 auto;
-  width: 60vw;
-}
 .profile-container {
   background-color: rgba(250, 250, 250, 0.9);
   margin: 5% 0;
@@ -64,7 +56,7 @@ h1, h2 {
 #heading-big {
   color: white ;
   /*color: #D391A2;*/
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   text-shadow: 5px 5px 10px rgba(10, 10, 10, 0.1);
   font-size: 300%;
 }
@@ -140,12 +132,25 @@ p {
   background-image: url("https://images.unsplash.com/photo-1468276311594-df7cb65d8df6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
   background-size: cover;
   display: flex;
-  height: 130vh;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
 }
 
 #section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(250, 250, 250, 0.9);
+  margin: 0 auto;
+  width: 60vw;
+  padding: 10px 30px 10px 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.1);
+/*  box-sizing: border-box;*/
+}
+
+#projects-section {
   display: flex;
   flex-direction: column;
   background-color: rgba(250, 250, 250, 0.9);
@@ -157,6 +162,17 @@ p {
 /*  box-sizing: border-box;*/
 }
 
+#project-boxes {
+  display:flex;
+  justify-content: space-between;
+}
+
+.project-box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .about-card {
 }
 
@@ -193,9 +209,24 @@ img {
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 70vw;
+  .projects-container {
+    height: 100%;
   }
+
+  #project-boxes {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .project-box {
+    width: 100%;
+  }
+
+  #btn-blue {
+    display: none;
+  }
+
+
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */

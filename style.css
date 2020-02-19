@@ -228,7 +228,7 @@ img {
 
 
 }
-@media (max-width: 500px) {
+@media (max-width: 450px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 70vw;
@@ -238,9 +238,44 @@ img {
   }
 
   body, .banner p, .logo-blue  {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
+  h2, p {
+    margin: 10px 5px;
+  }
+
+  .nav-links {
+    justify-content: space-between;
+    width: 50vw;
+  }
+  img {
+    max-width: 130px;
+    max-height: 130px;
+  }
+}
+
+@media (max-width: 250px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 70vw;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  body, .banner p, .logo-blue  {
+    font-size: 0.8em;
+  }
+
+  h2, p {
+    margin: 10px 5px;
+  }
+
+  .nav-links {
+    justify-content: space-between;
+    width: 50vw;
+  }
   img {
     max-width: 130px;
     max-height: 130px;

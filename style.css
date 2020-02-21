@@ -12,6 +12,7 @@ body {
   margin: 0px;
   background-image: url("https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1678&q=80");
   background-size: 100vw 100vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

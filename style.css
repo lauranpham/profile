@@ -322,10 +322,6 @@ p {
 
 @media (max-width: 250px) {
   /* For a screen < 540px, this CSS will be read */
-  body {
-    height: 100vh;
-    background-size: cover;
-  }
   body, #banner p, .logo  {
     font-size: 1em;
   }
